@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.clearTrip.test.HotelBookingTest">
+      <class name="com.clearTrip.test.FlightBookingTest">
         <methods>
-          <include name="shouldBeAbleToSearchForHotels"/>
+          <include name="setDriverPath"/>
+          <include name="testThatResultsAppearForAOneWayJourney"/>
         </methods>
-      </class> <!-- com.clearTrip.test.HotelBookingTest -->
+      </class> <!-- com.clearTrip.test.FlightBookingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
