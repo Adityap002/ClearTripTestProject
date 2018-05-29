@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearTrip.test.FlightBookingTest" hash-for-method="testThatResultsAppearForAOneWayJourney">testThatResultsAppearForAOneWayJourney</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +110,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearTrip.test.SignInTest" hash-for-method="shouldThrowAnErrorIfSignInDetailsAreMissing">shouldThrowAnErrorIfSignInDetailsAreMissing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearTrip.test.FlightBookingTest" hash-for-method="testThatResultsAppearForAOneWayJourney">testThatResultsAppearForAOneWayJourney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -136,47 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.clearTrip.test.FlightBookingTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testThatResultsAppearForAOneWayJourney">
-                  </a> <!-- testThatResultsAppearForAOneWayJourney -->
-                  <span class="method-name">testThatResultsAppearForAOneWayJourney</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;toTag&quot;}
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;ADITYA-LAPTOP&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\aditya.p\AppData\Local\Temp\scoped_dir8164_20402}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e08b6f547d29060924e5a219340337cc
-*** Element info: {Using=id, value=toTag}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at com.clearTrip.test.FlightBookingTest.testThatResultsAppearForAOneWayJourney(FlightBookingTest.java:43)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -188,6 +138,21 @@ Session ID: e08b6f547d29060924e5a219340337cc
                   <a name="shouldThrowAnErrorIfSignInDetailsAreMissing">
                   </a> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
                   <span class="method-name">shouldThrowAnErrorIfSignInDetailsAreMissing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.clearTrip.test.FlightBookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testThatResultsAppearForAOneWayJourney">
+                  </a> <!-- testThatResultsAppearForAOneWayJourney -->
+                  <span class="method-name">testThatResultsAppearForAOneWayJourney</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,8 +185,8 @@ Session ID: e08b6f547d29060924e5a219340337cc
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.clearTrip.test.HotelBookingTest&quot;/&gt;
-      &lt;class name=&quot;com.clearTrip.test.SignInTest&quot;/&gt;
       &lt;class name=&quot;com.clearTrip.test.FlightBookingTest&quot;/&gt;
+      &lt;class name=&quot;com.clearTrip.test.SignInTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -265,20 +230,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'shouldBeAbleToSearchForHotels')
 data.setCell(0, 2, 'com.clearTrip.test.HotelBookingTest')
-data.setCell(0, 3, 45149);
+data.setCell(0, 3, 51016);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'shouldThrowAnErrorIfSignInDetailsAreMissing')
-data.setCell(1, 2, 'com.clearTrip.test.SignInTest')
-data.setCell(1, 3, 28367);
+data.setCell(1, 1, 'testThatResultsAppearForAOneWayJourney')
+data.setCell(1, 2, 'com.clearTrip.test.FlightBookingTest')
+data.setCell(1, 3, 50559);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testThatResultsAppearForAOneWayJourney')
-data.setCell(2, 2, 'com.clearTrip.test.FlightBookingTest')
-data.setCell(2, 3, 24412);
+data.setCell(2, 1, 'shouldThrowAnErrorIfSignInDetailsAreMissing')
+data.setCell(2, 2, 'com.clearTrip.test.SignInTest')
+data.setCell(2, 3, 39899);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -311,31 +276,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">shouldBeAbleToSearchForHotels</span>
-                <span class="method-start">6253 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.clearTrip.test.SignInTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setDriverPath</span>
-                <span class="method-start">51418 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">shouldThrowAnErrorIfSignInDetailsAreMissing</span>
-                <span class="method-start">55251 ms</span>
+                <span class="method-start">5928 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.clearTrip.test.FlightBookingTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setDriverPath</span>
-                <span class="method-start">83622 ms</span>
+                <span class="method-start">56944 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testThatResultsAppearForAOneWayJourney</span>
-                <span class="method-start">87460 ms</span>
+                <span class="method-start">60674 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.clearTrip.test.SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setDriverPath</span>
+                <span class="method-start">111233 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">shouldThrowAnErrorIfSignInDetailsAreMissing</span>
+                <span class="method-start">115038 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

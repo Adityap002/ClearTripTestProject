@@ -1,5 +1,6 @@
 package com.clearTrip.test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -34,7 +35,6 @@ public class HotelBookingTest extends baseClass {
 
 		// fill hotels entry
 		searchHotels.enterLocation_Where(driver, "Indiranagar, Bangalore");
-		util.waitFor(1000);
 
 		searchHotels.select_Traveller(driver, "1 room, 2 adults");
 
@@ -43,6 +43,9 @@ public class HotelBookingTest extends baseClass {
 		String title = driver.getCurrentUrl();
 
 		Assert.assertTrue(title.contains("Bangalore"));
+		
+		Assert.assertTrue(util.isElementPresent(driver,
+				By.className("searchSummary")));
 
 		quitBrowser();
 
