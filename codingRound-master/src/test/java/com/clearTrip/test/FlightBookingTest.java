@@ -3,6 +3,7 @@ package com.clearTrip.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.cleartrip.bean.baseClass;
@@ -17,8 +18,10 @@ public class FlightBookingTest extends baseClass {
 	private CleartripProduct_Search product;
 	private Search_Flights_Page flightSearch;
 
+	@Parameters({ "from", "to", "departDate", "adults", "children", "infants" })
 	@Test
-	public void testThatResultsAppearForAOneWayJourney() {
+	public void testThatResultsAppearForAOneWayJourney(String from, String to,
+			String departDate, String adults, String children, String infants) {
 		util = new Util();
 		product = PageFactory.initElements(driver,
 				CleartripProduct_Search.class);
@@ -36,21 +39,35 @@ public class FlightBookingTest extends baseClass {
 		// fill search fields
 		flightSearch.clickOnOneWay(driver);
 
-		flightSearch.enter_From(driver, "Bangalore");
+		flightSearch.enter_From(driver, from);
 
-		flightSearch.enter_To(driver, "Delhi");
+		flightSearch.enter_To(driver, to);
 
 		// wait for the auto complete options to appear for the destination
-		flightSearch.enter_Depart_On(driver, "30/07/2018");
+		String[] depart_Date = util.datePicker(departDate);
+		String xpathForMonth = "//div[@id='ui-datepicker-div']//span[text()='"
+				+ depart_Date[1] + "']";
+		String xpathForYear = "//div[@id='ui-datepicker-div']//span[text()='"
+				+ depart_Date[2] + "']";
+
+		String[] splitDate = util.localDatePicker(departDate);
+		int a = Integer.parseInt(splitDate[0]);
+		int month = Integer.parseInt(splitDate[1]) - 1;
+
+		String xpathForDateClick = "//td[@data-year='" + depart_Date[2]
+				+ "' and @data-month='" + month + "']/a[text()='" + a + "']";
+
+		util.click_On_Date(driver, xpathForYear, xpathForMonth,
+				xpathForDateClick);
 
 		// Number of adults
-		flightSearch.no_Of_Adults(driver, "2");
+		flightSearch.no_Of_Adults(driver, adults);
 
 		// Number of Children
-		flightSearch.no_Of_Childres(driver, "1");
+		flightSearch.no_Of_Childres(driver, children);
 
 		// Number of Infants
-		flightSearch.no_Of_Infants(driver, "1");
+		flightSearch.no_Of_Infants(driver, infants);
 
 		// all fields filled in. Now click on search
 		flightSearch.submit_Button(driver);
@@ -59,9 +76,6 @@ public class FlightBookingTest extends baseClass {
 		// verify that result appears for the provided journey search
 		Assert.assertTrue(util.isElementPresent(driver,
 				By.className("searchSummary")));
-
-		// close the browser
-		quitBrowser();
 
 	}
 }

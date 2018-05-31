@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="SignBookingTest_username_password_valid(failed)">
+    <parameter name="password" value="Ad!%y@123"/>
+    <parameter name="username" value="adityap002@gmail.com"/>
     <classes>
-      <class name="com.clearTrip.test.HotelBookingTest">
+      <class name="com.clearTrip.test.SignInTest">
         <methods>
           <include name="setDriverPath"/>
-          <include name="shouldBeAbleToSearchForHotels"/>
+          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- com.clearTrip.test.HotelBookingTest -->
+      </class> <!-- com.clearTrip.test.SignInTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- SignBookingTest_username_password_valid(failed) -->
 </suite> <!-- Failed suite [Suite] -->
