@@ -45,10 +45,10 @@ public class FlightBookingTest extends baseClass {
 
 		// wait for the auto complete options to appear for the destination
 		String[] depart_Date = util.datePicker(departDate);
-		String xpathForMonth = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ depart_Date[1] + "']";
-		String xpathForYear = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ depart_Date[2] + "']";
+		By xpathForMonth = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ depart_Date[1] + "']");
+		By xpathForYear = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ depart_Date[2] + "']");
 
 		String[] splitDate = util.localDatePicker(departDate);
 		int a = Integer.parseInt(splitDate[0]);

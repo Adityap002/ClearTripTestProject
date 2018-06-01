@@ -31,7 +31,6 @@ public class HotelBookingTest extends baseClass {
 		setDriverPath();
 
 		driver.get(url.app_url);
-		util.waitFor(2000);
 
 		// Click on hotels Menu
 		product.click_On_Hotels(driver);
@@ -42,10 +41,10 @@ public class HotelBookingTest extends baseClass {
 
 		// Click on check-in date
 		String[] check_In_Date = util.datePicker(checkInDate);
-		String xpathForMonth = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ check_In_Date[1] + "']";
-		String xpathForYear = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ check_In_Date[2] + "']";
+		By xpathForMonth = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ check_In_Date[1] + "']");
+		By xpathForYear = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ check_In_Date[2] + "']");
 
 		String[] splitDate = util.localDatePicker(checkInDate);
 		int a = Integer.parseInt(splitDate[0]);
@@ -61,8 +60,8 @@ public class HotelBookingTest extends baseClass {
 		// Click on check-out date
 		String[] departDate_CheckOut = util.datePicker(checkOutDate);
 		
-		String xpathForMonth_CheckOut = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ departDate_CheckOut[1] + "']";
+		By xpathForMonth_CheckOut = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ departDate_CheckOut[1] + "']");
 
 		String[] splitDate_CheckOut = util.localDatePicker(checkOutDate);
 		int b = Integer.parseInt(splitDate_CheckOut[0]);
@@ -73,8 +72,8 @@ public class HotelBookingTest extends baseClass {
 				+ month_CheckOut + "']/a[text()='" + b
 				+ "']";
 		
-		String xpathForYear_CheckOut = "//div[@id='ui-datepicker-div']//span[text()='"
-				+ departDate_CheckOut[2] + "']";
+		By xpathForYear_CheckOut = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
+				+ departDate_CheckOut[2] + "']");
 
 		util.click_On_Date(driver, xpathForYear_CheckOut, xpathForMonth_CheckOut, xpathForDateClick_CheckOut);
 

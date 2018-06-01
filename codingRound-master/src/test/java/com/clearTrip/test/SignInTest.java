@@ -29,7 +29,6 @@ public class SignInTest extends baseClass {
 		setDriverPath();
 
 		driver.get(url.app_url);
-		util.waitFor(1000);
 
 		header.click_On_YourTrip(driver);
 		header.click_On_SignIn_btn(driver);

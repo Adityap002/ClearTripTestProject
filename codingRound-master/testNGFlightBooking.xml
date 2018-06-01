@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="FlightBookingTest">
+		<parameter name="departDate" value="7/1/2018" />
+		<parameter name="from" value="Bangalore" />
+		<parameter name="to" value="Delhi" />
+		<parameter name="adults" value="2" />
+		<parameter name="children" value="1" />
+		<parameter name="infants" value="1" />
+		<classes>
+			<class name="com.clearTrip.test.FlightBookingTest" />
+		</classes>
+	</test>  <!-- Test -->
+</suite> <!-- Suite -->

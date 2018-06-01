@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="272652" started-at="2018-05-31T12:44:09Z" finished-at="2018-05-31T12:48:41Z">
+  <suite name="Suite" duration-ms="219955" started-at="2018-05-31T14:46:00Z" finished-at="2018-05-31T14:49:40Z">
     <groups>
     </groups>
-    <test name="HotelsBookingTest" duration-ms="62554" started-at="2018-05-31T12:44:09Z" finished-at="2018-05-31T12:45:11Z">
+    <test name="HotelsBookingTest" duration-ms="50557" started-at="2018-05-31T14:46:00Z" finished-at="2018-05-31T14:46:50Z">
       <class name="com.clearTrip.test.HotelBookingTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="setDriverPath" is-config="true" duration-ms="11036" started-at="2018-05-31T18:14:09Z" finished-at="2018-05-31T18:14:20Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="setDriverPath" is-config="true" duration-ms="8259" started-at="2018-05-31T20:16:00Z" finished-at="2018-05-31T20:16:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels(java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="shouldBeAbleToSearchForHotels" duration-ms="50477" started-at="2018-05-31T18:14:20Z" finished-at="2018-05-31T18:15:10Z">
+        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels(java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="shouldBeAbleToSearchForHotels" duration-ms="40956" started-at="2018-05-31T20:16:08Z" finished-at="2018-05-31T20:16:49Z">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToSearchForHotels -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="quitBrowser" is-config="true" duration-ms="946" started-at="2018-05-31T18:15:10Z" finished-at="2018-05-31T18:15:11Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.HotelBookingTest@724af044]" name="quitBrowser" is-config="true" duration-ms="1234" started-at="2018-05-31T20:16:49Z" finished-at="2018-05-31T20:16:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.clearTrip.test.HotelBookingTest -->
     </test> <!-- HotelsBookingTest -->
-    <test name="FlightBookingTest" duration-ms="48911" started-at="2018-05-31T12:45:11Z" finished-at="2018-05-31T12:46:00Z">
+    <test name="FlightBookingTest" duration-ms="41968" started-at="2018-05-31T14:46:50Z" finished-at="2018-05-31T14:47:32Z">
       <class name="com.clearTrip.test.FlightBookingTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="setDriverPath" is-config="true" duration-ms="7288" started-at="2018-05-31T18:15:11Z" finished-at="2018-05-31T18:15:19Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="setDriverPath" is-config="true" duration-ms="5334" started-at="2018-05-31T20:16:50Z" finished-at="2018-05-31T20:16:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="testThatResultsAppearForAOneWayJourney" duration-ms="40120" started-at="2018-05-31T18:15:19Z" finished-at="2018-05-31T18:15:59Z">
+        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="testThatResultsAppearForAOneWayJourney" duration-ms="35400" started-at="2018-05-31T20:16:56Z" finished-at="2018-05-31T20:17:31Z">
           <params>
             <param index="0">
               <value>
@@ -75,19 +75,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="quitBrowser" is-config="true" duration-ms="1493" started-at="2018-05-31T18:15:59Z" finished-at="2018-05-31T18:16:00Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.FlightBookingTest@6f7fd0e6]" name="quitBrowser" is-config="true" duration-ms="1226" started-at="2018-05-31T20:17:31Z" finished-at="2018-05-31T20:17:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.clearTrip.test.FlightBookingTest -->
     </test> <!-- FlightBookingTest -->
-    <test name="SignBookingTest_username_invalid" duration-ms="38331" started-at="2018-05-31T12:46:00Z" finished-at="2018-05-31T12:46:39Z">
+    <test name="SignBookingTest_username_invalid" duration-ms="28741" started-at="2018-05-31T14:47:32Z" finished-at="2018-05-31T14:48:01Z">
       <class name="com.clearTrip.test.SignInTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="setDriverPath" is-config="true" duration-ms="7117" started-at="2018-05-31T18:16:00Z" finished-at="2018-05-31T18:16:08Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="setDriverPath" is-config="true" duration-ms="5541" started-at="2018-05-31T20:17:32Z" finished-at="2018-05-31T20:17:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="30129" started-at="2018-05-31T18:16:08Z" finished-at="2018-05-31T18:16:38Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="21939" started-at="2018-05-31T20:17:38Z" finished-at="2018-05-31T20:18:00Z">
           <params>
             <param index="0">
               <value>
@@ -108,19 +108,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="quitBrowser" is-config="true" duration-ms="1078" started-at="2018-05-31T18:16:38Z" finished-at="2018-05-31T18:16:39Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@1bce4f0a]" name="quitBrowser" is-config="true" duration-ms="1252" started-at="2018-05-31T20:18:00Z" finished-at="2018-05-31T20:18:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.clearTrip.test.SignInTest -->
     </test> <!-- SignBookingTest_username_invalid -->
-    <test name="SignBookingTest_password_invalid" duration-ms="35093" started-at="2018-05-31T12:46:39Z" finished-at="2018-05-31T12:47:14Z">
+    <test name="SignBookingTest_password_invalid" duration-ms="29282" started-at="2018-05-31T14:48:01Z" finished-at="2018-05-31T14:48:30Z">
       <class name="com.clearTrip.test.SignInTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="setDriverPath" is-config="true" duration-ms="7866" started-at="2018-05-31T18:16:39Z" finished-at="2018-05-31T18:16:47Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="setDriverPath" is-config="true" duration-ms="5535" started-at="2018-05-31T20:18:01Z" finished-at="2018-05-31T20:18:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="26324" started-at="2018-05-31T18:16:47Z" finished-at="2018-05-31T18:17:13Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="22435" started-at="2018-05-31T20:18:07Z" finished-at="2018-05-31T20:18:29Z">
           <params>
             <param index="0">
               <value>
@@ -141,19 +141,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="quitBrowser" is-config="true" duration-ms="895" started-at="2018-05-31T18:17:13Z" finished-at="2018-05-31T18:17:14Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@6a41eaa2]" name="quitBrowser" is-config="true" duration-ms="1306" started-at="2018-05-31T20:18:29Z" finished-at="2018-05-31T20:18:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.clearTrip.test.SignInTest -->
     </test> <!-- SignBookingTest_password_invalid -->
-    <test name="SignBookingTest_username_password_empty" duration-ms="31521" started-at="2018-05-31T12:47:14Z" finished-at="2018-05-31T12:47:45Z">
+    <test name="SignBookingTest_username_password_empty" duration-ms="34049" started-at="2018-05-31T14:48:30Z" finished-at="2018-05-31T14:49:04Z">
       <class name="com.clearTrip.test.SignInTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="setDriverPath" is-config="true" duration-ms="6459" started-at="2018-05-31T18:17:14Z" finished-at="2018-05-31T18:17:20Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="setDriverPath" is-config="true" duration-ms="4894" started-at="2018-05-31T20:18:30Z" finished-at="2018-05-31T20:18:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="24094" started-at="2018-05-31T18:17:20Z" finished-at="2018-05-31T18:17:45Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="27817" started-at="2018-05-31T20:18:35Z" finished-at="2018-05-31T20:19:03Z">
           <params>
             <param index="0">
               <value>
@@ -174,19 +174,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="quitBrowser" is-config="true" duration-ms="962" started-at="2018-05-31T18:17:45Z" finished-at="2018-05-31T18:17:45Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@39c0f4a]" name="quitBrowser" is-config="true" duration-ms="1332" started-at="2018-05-31T20:19:03Z" finished-at="2018-05-31T20:19:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.clearTrip.test.SignInTest -->
     </test> <!-- SignBookingTest_username_password_empty -->
-    <test name="SignBookingTest_username_password_valid" duration-ms="55836" started-at="2018-05-31T12:47:46Z" finished-at="2018-05-31T12:48:41Z">
+    <test name="SignBookingTest_username_password_valid" duration-ms="35156" started-at="2018-05-31T14:49:04Z" finished-at="2018-05-31T14:49:40Z">
       <class name="com.clearTrip.test.SignInTest">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="setDriverPath" is-config="true" duration-ms="6651" started-at="2018-05-31T18:17:46Z" finished-at="2018-05-31T18:17:52Z">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="setDriverPath" is-config="true" duration-ms="5440" started-at="2018-05-31T20:19:04Z" finished-at="2018-05-31T20:19:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriverPath -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="48220" started-at="2018-05-31T18:17:52Z" finished-at="2018-05-31T18:18:40Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="28510" started-at="2018-05-31T20:19:10Z" finished-at="2018-05-31T20:19:38Z">
           <params>
             <param index="0">
               <value>
@@ -207,7 +207,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="quitBrowser" is-config="true" duration-ms="960" started-at="2018-05-31T18:18:40Z" finished-at="2018-05-31T18:18:41Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.clearTrip.test.SignInTest@548e7350]" name="quitBrowser" is-config="true" duration-ms="1198" started-at="2018-05-31T20:19:38Z" finished-at="2018-05-31T20:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
