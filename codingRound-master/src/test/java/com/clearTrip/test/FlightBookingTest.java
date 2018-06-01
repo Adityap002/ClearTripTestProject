@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,11 @@ import com.cleartrip.bean.baseClass;
 import com.cleartrip.config.Configuration.url;
 import com.cleartrip.page.CleartripProduct_Search;
 import com.cleartrip.page.Search_Flights_Page;
+import com.cleartrip.report.JyperionListener;
 import com.cleartrip.utility.Util;
 
+
+@Listeners(value=JyperionListener.class)
 public class FlightBookingTest extends baseClass {
 
 	private Util util;
