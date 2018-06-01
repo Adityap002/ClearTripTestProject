@@ -1,5 +1,6 @@
 package com.clearTrip.test;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -17,6 +18,7 @@ public class FlightBookingTest extends baseClass {
 	private Util util;
 	private CleartripProduct_Search product;
 	private Search_Flights_Page flightSearch;
+	private Logger logger = Logger.getLogger(FlightBookingTest.class);
 
 	@Parameters({ "from", "to", "departDate", "adults", "children", "infants" })
 	@Test
@@ -29,8 +31,10 @@ public class FlightBookingTest extends baseClass {
 				Search_Flights_Page.class);
 
 		setDriverPath();
+		logger.debug("Driver got set");
 
 		driver.get(url.app_url);
+		logger.debug("open url =="+url.app_url);
 		util.waitFor(2000);
 
 		// click on flight tab
@@ -71,6 +75,7 @@ public class FlightBookingTest extends baseClass {
 
 		// all fields filled in. Now click on search
 		flightSearch.submit_Button(driver);
+		logger.debug("all valid data entered and click the Serch button");
 
 		util.waitFor(5000);
 		// verify that result appears for the provided journey search

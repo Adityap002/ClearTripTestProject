@@ -67,6 +67,7 @@ public class Search_Flights_Page {
 		
 		String toFlights = "//ul[@id='ui-id-2']/li[1]//a[contains(text(),'"+to+"')]";
 		driver.findElement(By.xpath(toFlights)).click();
+		
 	}
 	
 	public void no_Of_Adults(WebDriver driver, String adult) {

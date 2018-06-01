@@ -1,0 +1,83 @@
+2018-06-01 17:44:39 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:44:39 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:44:39 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:44:39 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:44:48 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:45:28 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:45:28 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:45:28 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:45:28 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:45:28 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:45:33 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:46:12 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:46:12 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:46:12 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:46:12 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:46:12 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:46:19 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:46:40 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:46:40 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:46:40 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:46:40 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:46:40 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:46:45 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:47:05 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:47:05 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:47:05 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:47:05 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:47:05 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:47:10 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:47:29 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:47:29 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:47:29 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:47:29 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:47:29 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:47:35 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:48:05 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:57:48 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:57:48 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:57:48 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:57:49 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:57:56 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:57:56 DEBUG FlightBookingTest:34 - Driver got set
+2018-06-01 17:58:14 DEBUG FlightBookingTest:37 - open url ==https://www.cleartrip.com/
+2018-06-01 17:58:27 DEBUG FlightBookingTest:78 - all valid data entered and click the Serch button
+2018-06-01 17:58:34 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:58:34 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:58:34 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:58:34 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:58:34 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:58:39 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:58:39 DEBUG HotelBookingTest:35 - Driver got set
+2018-06-01 17:58:50 DEBUG HotelBookingTest:38 - open url ==https://www.cleartrip.com/
+2018-06-01 17:59:34 DEBUG HotelBookingTest:53 - Check-In Month ==> By.xpath: //div[@id='ui-datepicker-div']//span[text()='July']
+2018-06-01 17:59:34 DEBUG HotelBookingTest:54 - Check-In Year ==> By.xpath: //div[@id='ui-datepicker-div']//span[text()='2018']
+2018-06-01 17:59:34 DEBUG HotelBookingTest:63 - date => //td[@data-year='2018' and @data-month='6']/a[text()='1']
+2018-06-01 17:59:35 DEBUG HotelBookingTest:78 - Check-Out Month ==> By.xpath: //div[@id='ui-datepicker-div']//span[text()='July']
+2018-06-01 17:59:35 DEBUG HotelBookingTest:85 - Check-Out Date ==> //td[@data-year='2018' and @data-month='6']/a[text()='6']
+2018-06-01 17:59:35 DEBUG HotelBookingTest:89 - Check-Out Year ==> By.xpath: //div[@id='ui-datepicker-div']//span[text()='2018']
+2018-06-01 17:59:41 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 17:59:41 DEBUG baseClass:33 - going to set driver path
+2018-06-01 17:59:41 DEBUG baseClass:35 - drive is not null
+2018-06-01 17:59:41 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 17:59:41 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 17:59:47 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:00:20 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 18:00:20 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:00:20 DEBUG baseClass:35 - drive is not null
+2018-06-01 18:00:20 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 18:00:20 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 18:00:25 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:00:45 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 18:00:45 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:00:45 DEBUG baseClass:35 - drive is not null
+2018-06-01 18:00:45 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 18:00:45 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 18:00:50 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:01:23 DEBUG baseClass:129 - Quiting the browser
+2018-06-01 18:01:23 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:01:23 DEBUG baseClass:35 - drive is not null
+2018-06-01 18:01:23 DEBUG baseClass:45 - Browser is Chrome
+2018-06-01 18:01:23 DEBUG baseClass:56 - System is Windows and browser is Chrome
+2018-06-01 18:01:28 DEBUG baseClass:33 - going to set driver path
+2018-06-01 18:01:57 DEBUG baseClass:129 - Quiting the browser

@@ -1,10 +1,11 @@
 package com.clearTrip.test;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.cleartrip.bean.baseClass;
 import com.cleartrip.config.Configuration.url;
@@ -17,6 +18,8 @@ public class HotelBookingTest extends baseClass {
 	private Util util;
 	private CleartripProduct_Search product;
 	private Search_Hotels_Page searchHotels;
+	private Logger logger = Logger.getLogger(HotelBookingTest.class);
+	private SoftAssert assertion = new SoftAssert();
 
 	
 	@Parameters({"checkInDate", "checkOutDate"})
@@ -29,8 +32,10 @@ public class HotelBookingTest extends baseClass {
 				Search_Hotels_Page.class);
 
 		setDriverPath();
+		logger.debug("Driver got set");
 
 		driver.get(url.app_url);
+		logger.debug("open url =="+url.app_url);
 
 		// Click on hotels Menu
 		product.click_On_Hotels(driver);
@@ -45,6 +50,8 @@ public class HotelBookingTest extends baseClass {
 				+ check_In_Date[1] + "']");
 		By xpathForYear = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
 				+ check_In_Date[2] + "']");
+		logger.debug("Check-In Month ==> "+xpathForMonth);
+		logger.debug("Check-In Year ==> "+xpathForYear);
 
 		String[] splitDate = util.localDatePicker(checkInDate);
 		int a = Integer.parseInt(splitDate[0]);
@@ -53,6 +60,7 @@ public class HotelBookingTest extends baseClass {
 		String xpathForDateClick = "//td[@data-year='" + check_In_Date[2]
 				+ "' and @data-month='" + month + "']/a[text()='"
 				+ a + "']";
+		logger.debug("date => "+xpathForDateClick);
 		
 		util.click_On_Date(driver, xpathForYear, xpathForMonth, xpathForDateClick);
 
@@ -67,13 +75,18 @@ public class HotelBookingTest extends baseClass {
 		int b = Integer.parseInt(splitDate_CheckOut[0]);
 		int month_CheckOut = Integer.parseInt(splitDate_CheckOut[1]) - 1;
 		
+		logger.debug("Check-Out Month ==> "+xpathForMonth_CheckOut);
+		
+		
 		String xpathForDateClick_CheckOut = "//td[@data-year='"
 				+ splitDate_CheckOut[2] + "' and @data-month='"
 				+ month_CheckOut + "']/a[text()='" + b
 				+ "']";
+		logger.debug("Check-Out Date ==> "+xpathForDateClick_CheckOut);
 		
 		By xpathForYear_CheckOut = By.xpath("//div[@id='ui-datepicker-div']//span[text()='"
 				+ departDate_CheckOut[2] + "']");
+		logger.debug("Check-Out Year ==> "+xpathForYear_CheckOut);
 
 		util.click_On_Date(driver, xpathForYear_CheckOut, xpathForMonth_CheckOut, xpathForDateClick_CheckOut);
 
@@ -85,10 +98,12 @@ public class HotelBookingTest extends baseClass {
 
 		util.waitFor(2000);
 
-		Assert.assertTrue(title.contains("Bangalore"));
+		assertion.assertTrue(title.contains("Bangalore"));
 
-		Assert.assertTrue(util.isElementPresent(driver,
+		assertion.assertTrue(util.isElementPresent(driver,
 				By.className("searchSummary")));
+		
+		assertion.assertAll();
 	}
 
 }
