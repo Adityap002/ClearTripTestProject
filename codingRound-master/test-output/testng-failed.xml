@@ -2,13 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="SignBookingTest_username_password_valid(failed)">
-    <parameter name="password" value="Ad!%y@123"/>
-    <parameter name="username" value="adityap002@gmail.com"/>
     <classes>
       <class name="com.clearTrip.test.SignInTest">
         <methods>
           <include name="setDriverPath"/>
-          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing" invocation-numbers="0"/>
+          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing"/>
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- com.clearTrip.test.SignInTest -->

@@ -9,4 +9,10 @@ public class Configuration {
 		//create browser variable
 		public static String browse = "chrome";
 	}
+	public static class excelSetUp{
+		//create browser variable
+		public static String excelLocaation = "C:\\Users\\aditya.p\\git\\coadingRound\\codingRound-master\\src\\main\\java\\com\\cleartrip\\dataset\\";
+		public static String workbookName = "ExcelData.xlsx";
+		
+	}
 }

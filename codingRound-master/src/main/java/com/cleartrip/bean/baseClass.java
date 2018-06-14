@@ -18,7 +18,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.cleartrip.config.Configuration.browser;
+import com.cleartrip.utility.ExcelUtility;
 import com.sun.javafx.PlatformUtil;
+
 import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("restriction")
@@ -119,6 +121,19 @@ public class baseClass {
 
 		// maximize browser
 		driver.manage().window().maximize();
+		System.out.println("Maximize broweser");
+
+		try {
+			
+			ExcelUtility
+					.setExcelFile(
+							"C:\\Users\\aditya.p\\git\\coadingRound\\codingRound-master\\src\\main\\java\\com\\cleartrip\\dataset\\ExcelData.xlsx",
+							"LoginTests");
+			System.out.println("Maximize broweser");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static void closeBrowser() {
@@ -180,6 +195,11 @@ public class baseClass {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 	}
 
+	public void isFrameToBeAvailable_Wait(WebDriver driver, String locator) {
+		instantiateWaitObject(driver);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+	}
+
 	// Below is the syntax which is used to check if the element is enabled or
 	// not
 	public boolean isElementEnabled(WebDriver driver, By by) {
@@ -193,7 +213,14 @@ public class baseClass {
 		WebElement element = driver.findElement(by);
 		return element.isDisplayed();
 	}
-	
+
+	// Below is the syntax which is used to check if the element is Selected or
+	// not. It returns false when the element is not Selected.
+	public boolean isElementSelected(WebDriver driver, By by) {
+		WebElement element = driver.findElement(by);
+		return element.isSelected();
+	}
+
 	public static void takeSnapShot(WebDriver driver, String fileWithPath)
 			throws Exception {
 

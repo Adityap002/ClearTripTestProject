@@ -24,5 +24,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aditya.p/git/coadingRound/codingRound-master/src/main/java/com/cleartrip/jars/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-	<test thread-count="5" name="SignBookingTest_username_invalid">
-		<parameter name="username" value="adityap002@gmail.com" />
-		<parameter name="password" value="12345" />
-		<parameter name="scenario" value="negative" />
-		<classes>
-			<class name="com.clearTrip.test.SignInTest" />
-		</classes>
-	</test>
-	<test thread-count="5" name="SignBookingTest_password_invalid">
-		<parameter name="username" value="asdfhk" />
-		<parameter name="password" value="Ad!%y@123" />
-		<parameter name="scenario" value="negative" />
-		<classes>
-			<class name="com.clearTrip.test.SignInTest" />
-		</classes>
-	</test>
-	<test thread-count="5" name="SignBookingTest_username_password_empty">
-		<parameter name="username" value="" />
-		<parameter name="password" value="" />
-		<parameter name="scenario" value="negative" />
-		<classes>
-			<class name="com.clearTrip.test.SignInTest" />
-		</classes>
-	</test>
 	<test thread-count="5" name="SignBookingTest_username_password_valid">
-		<parameter name="username" value="adityap002@gmail.com" />
-		<parameter name="password" value="Ad!%y@123" />
-		<parameter name="scenario" value="positive" />
 		<classes>
 			<class name="com.clearTrip.test.SignInTest" />
 		</classes>
