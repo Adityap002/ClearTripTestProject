@@ -3,6 +3,7 @@ package com.cleartrip.bean;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -10,7 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;	
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,10 +19,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.cleartrip.config.Configuration.browser;
+import com.cleartrip.config.Configuration.excelSetUp;
 import com.cleartrip.utility.ExcelUtility;
 import com.sun.javafx.PlatformUtil;
-
-import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("restriction")
 public class baseClass {
@@ -121,15 +121,10 @@ public class baseClass {
 
 		// maximize browser
 		driver.manage().window().maximize();
-		System.out.println("Maximize broweser");
 
 		try {
-			
-			ExcelUtility
-					.setExcelFile(
-							"C:\\Users\\aditya.p\\git\\coadingRound\\codingRound-master\\src\\main\\java\\com\\cleartrip\\dataset\\ExcelData.xlsx",
-							"LoginTests");
-			System.out.println("Maximize broweser");
+			ExcelUtility.setExcelFile(excelSetUp.excelLocaation
+					+ excelSetUp.workbookName, "LoginTests");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

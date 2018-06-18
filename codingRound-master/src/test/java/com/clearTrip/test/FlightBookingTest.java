@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ import com.cleartrip.config.Configuration.url;
 import com.cleartrip.page.CleartripProduct_Search;
 import com.cleartrip.page.Search_Flights_Page;
 import com.cleartrip.report.JyperionListener;
+import com.cleartrip.utility.ExcelUtility;
 import com.cleartrip.utility.Util;
 
 
@@ -23,9 +25,14 @@ public class FlightBookingTest extends baseClass {
 	private CleartripProduct_Search product;
 	private Search_Flights_Page flightSearch;
 	private Logger logger = Logger.getLogger(FlightBookingTest.class);
+	
+	@DataProvider(name="flightbooking")
+	public Object[][] dataProvider(){
+		Object[][] testData = ExcelUtility.getTestData("FlightBooking");
+		return testData;
+	}
 
-	@Parameters({ "from", "to", "departDate", "adults", "children", "infants" })
-	@Test
+	@Test(dataProvider="flightbooking")
 	public void testThatResultsAppearForAOneWayJourney(String from, String to,
 			String departDate, String adults, String children, String infants) {
 		util = new Util();
@@ -34,7 +41,6 @@ public class FlightBookingTest extends baseClass {
 		flightSearch = PageFactory.initElements(driver,
 				Search_Flights_Page.class);
 
-		setDriverPath();
 		logger.debug("Driver got set");
 
 		driver.get(url.app_url);

@@ -3,6 +3,7 @@ package com.clearTrip.test;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ import com.cleartrip.config.Configuration.url;
 import com.cleartrip.page.CleartripProduct_Search;
 import com.cleartrip.page.Search_Hotels_Page;
 import com.cleartrip.report.JyperionListener;
+import com.cleartrip.utility.ExcelUtility;
 import com.cleartrip.utility.Util;
 
 @Listeners(value=JyperionListener.class)
@@ -25,16 +27,21 @@ public class HotelBookingTest extends baseClass {
 	private SoftAssert assertion = new SoftAssert();
 
 	
-	@Parameters({"checkInDate", "checkOutDate"})
-	@Test
-	public void shouldBeAbleToSearchForHotels(String checkInDate, String checkOutDate) {
+	@DataProvider(name="hotelbook")
+	public Object[][] dataProvider(){
+		Object[][] testData = ExcelUtility.getTestData("HotelsBookingTest");
+		return testData;
+	}
+
+	
+	@Test(dataProvider="hotelbook")
+	public void shouldBeAbleToSearchForHotels(String where, String checkInDate, String checkOutDate) {
 		util = new Util();
 		product = PageFactory.initElements(driver,
 				CleartripProduct_Search.class);
 		searchHotels = PageFactory.initElements(driver,
 				Search_Hotels_Page.class);
 
-		setDriverPath();
 		logger.debug("Driver got set");
 
 		driver.get(url.app_url);
@@ -44,7 +51,7 @@ public class HotelBookingTest extends baseClass {
 		product.click_On_Hotels(driver);
 
 		// fill hotels entry
-		searchHotels.enterLocation_Where(driver, "Indiranagar, Bangalore");
+		searchHotels.enterLocation_Where(driver, where);
 		util.waitFor(1000);
 
 		// Click on check-in date
